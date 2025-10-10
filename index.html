@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wish Store - مستلزمات طلابية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Wish logo" class="logo">
+      </div>
+      <nav class="main-nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#design">صمّم نوت بوكك</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1>WISH</h1>
+        <p class="bio">WISH المكان اللي هتلاقي فيه نوت بوك احلامك ، وفرنالك كل أدواتك الدراسية بشكل عملي و انيق و كمان بتصميمك الخاص</p>
+        <a href="#design" class="btn primary">صمّم نوت بوكك الآن</a>
+      </div>
+      <div class="hero-right">
+        <img src="cover1.svg" alt="hero cover" class="hero-image">
+      </div>
+    </section>
+
+    <section id="products" class="container section">
+      <h2 class="section-title">منتجات جاهزة</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="product1.svg" alt="Notebook A">
+          <h3>دفتر أنيق</h3>
+          <p>دفتر بتصميم عملي ومتين.</p>
+          <div class="price">سعر: 60 ج</div>
+          <a class="btn" href="#design">صمّم نسخة</a>
+        </div>
+        <div class="product-card">
+          <img src="product2.svg" alt="Pen set">
+          <h3>طقم أقلام</h3>
+          <p>مجموعة أقلام جيل ألوان مميزة.</p>
+          <div class="price">سعر: 40 ج</div>
+          <a class="btn" href="#contact">اطلب</a>
+        </div>
+        <div class="product-card">
+          <img src="product3.svg" alt="Organizer">
+          <h3>منظم مكتب</h3>
+          <p>يحافظ على ترتيب أدواتك.</p>
+          <div class="price">سعر: 80 ج</div>
+          <a class="btn" href="#contact">اطلب</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="container section">
+      <h2 class="section-title">صمّم نوت بوكك</h2>
+      <div class="design-grid">
+        <div class="controls">
+          <div class="control-group">
+            <h3>1. اختر الحجم</h3>
+            <div class="options" id="sizeOptions">
+              <button class="option" data-price="50" data-value="A5">A5 - 50ج</button>
+              <button class="option" data-price="70" data-value="A4">A4 - 70ج</button>
+              <button class="option" data-price="90" data-value="B5">B5 - 90ج</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3>2. اختر الغلاف</h3>
+            <div class="options" id="coverOptions">
+              <button class="option cover-option" data-price="0" data-src="cover1.svg">غلاف 1</button>
+              <button class="option cover-option" data-price="5" data-src="cover2.svg">غلاف 2 (+5ج)</button>
+              <button class="option cover-option" data-price="8" data-src="cover3.svg">غلاف 3 (+8ج)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3>3. نوع الورق</h3>
+            <div class="options" id="paperOptions">
+              <button class="option" data-price="0" data-value="سادة">سادة</button>
+              <button class="option" data-price="10" data-value="مسطر">مسطر (+10ج)</button>
+              <button class="option" data-price="15" data-value="مربعات">مربعات (+15ج)</button>
+              <button class="option" data-price="20" data-value="دوت">دوت (+20ج)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3>4. الإضافات</h3>
+            <div class="options" id="extraOptions">
+              <button class="option" data-price="10" data-value="بوكمارك">بوكمارك (+10ج)</button>
+              <button class="option" data-price="15" data-value="اسم على الغلاف">اسم على الغلاف (+15ج)</button>
+              <button class="option" data-price="25" data-value="جيب خلفي">جيب خلفي (+25ج)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3>5. اكتب الاسم (اختياري)</h3>
+            <input id="userName" type="text" placeholder="اكتب الاسم هنا">
+          </div>
+
+          <div class="summary">
+            <div>السعر الحالي:</div>
+            <div id="totalPrice" class="total">0 ج</div>
+            <button id="orderBtn" class="btn primary">اطلب الآن عبر واتساب</button>
+          </div>
+        </div>
+
+        <div class="preview">
+          <h3>المعاينة</h3>
+          <div class="notebook-preview">
+            <img id="previewCover" src="cover1.svg" alt="preview cover">
+            <div id="previewName" class="preview-name">اسمك هنا</div>
+            <div class="notebook-details" id="previewDetails">حجم: - | ورق: - | إضافات: -</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2 class="section-title">تواصل</h2>
+      <p>تواصلي معنا على واتساب: <a href="https://wa.me/201110859649">+201110859649</a></p>
+      <p>أو تابعي إنستجرام: <a href="https://instagram.com/wish.store.eg">@wish.store.eg</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Wish Store. كل الحقوق محفوظة.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
