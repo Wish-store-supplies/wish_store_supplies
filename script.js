@@ -1,3 +1,6 @@
+// 🧹 تنظيف البيانات عند كل زيارة جديدة
+localStorage.clear();
+sessionStorage.clear();
 
 // Script for Wish design tool
 const whatsappNumber = "+201110859649"; // replace if needed
